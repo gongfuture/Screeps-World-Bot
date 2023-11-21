@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/lodash": "^3.10.1",
+    "@types/screeps": "^3.3.6",
+    "rollup": "^4.5.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-screeps": "^1.0.1"
+  },
+  "name": "screeps-world-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -cw",
+    "push": "rollup -cw --bundleConfigAsCjs --environment DEST:main",
+    "local": "rollup -cw --bundleConfigAsCjs --environment DEST:local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "source-map": "^0.6.1"
+  }
+}
