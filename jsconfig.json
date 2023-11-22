@@ -2,6 +2,9 @@
     "include": [
         "src/*"
     ],
+    "exclude": [
+        "src/modules/errorMapper.js"
+    ],
     "compilerOptions": {
         "target": "es2016",
         "checkJs": true,
